@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/*header*/
+.head-title {
+  font-family: "ubuntu", sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  color: #21958c;
+  padding-top: 30px;
+  padding-bottom: 6px;
+}
+
+.position {
+  font-family: "ubuntu", sans-serif;
+  font-size: 22px;
+  color: #444444;
+  padding-bottom: 4px;
+}
+
+.about {
+  padding-bottom: 20px;
+  font-style: italic;
+}
+
+/*contacts*/
+svg {
+  height: 1em;
+}
+
+.contacts-item:hover svg {
+  fill: #21958c;
+}
+
+p {
+  margin: 0;
+  padding-bottom: 0.2em;
+  padding-top: 0.2em;
+}
+
+.contacts-item {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 0.2em;
+  font-size: 14px;
+}
+
+.contacts-item:hover {
+  color: #21958c;
+}
+
+.contacts {
+  position: relative;
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 16px;
+}
+
+.contacts::before,
+.contacts::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #7a7a7a;
+}
+
+.contacts::before {
+  top: 4px;
+}
+
+.contacts::after {
+  bottom: 4px;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+}
+
+/*main*/
+
+.main--head {
+  text-transform: uppercase;
+  font-family: "ubuntu", sans-serif;
+  color: #21958c;
+  padding-bottom: 10px;
+}
+
+.main-section {
+  padding-bottom: 20px;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills-item {
+  padding: 4px 8px;
+  margin: 4px;
+  color: #fff;
+  background-color: #0d4b46;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+.education {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education-section {
+  margin-right: 50px;
+}
+
+.education-time {
+  color: #21958c;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.education-about {
+  font-weight: bold;
+}
+
+.personal-projects-list {
+  list-style: url(./img/check.svg);
+}
+
+.personal-projects-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 0.2em;
+}
+
+.personal-projects-link:hover,
+.project-link:hover {
+  color: #21958c;
+}
+
+.personal-projects-link:hover svg {
+  fill: #21958c;
+}
+
+.personal-projects-about {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.project-link {
+  /* text-decoration: none; */
+  color: black;
+}

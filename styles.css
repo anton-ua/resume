@@ -49,11 +49,18 @@ p {
 .contacts-item {
   text-decoration: none;
   color: black;
+}
+
+.contacts-item,
+.location {
+  display: flex;
+  align-items: center;
   padding-bottom: 0.2em;
   font-size: 14px;
 }
 
-.contacts-item:hover {
+.contacts-item:hover,
+.location:hover {
   color: #21958c;
 }
 
@@ -81,9 +88,20 @@ p {
   bottom: 4px;
 }
 
-.contacts-item {
-  display: flex;
-  align-items: center;
+.telegram:hover > .telegram-svg {
+  animation-name: telegram;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes telegram {
+  from {
+    transform: translate(0);
+  }
+  to {
+    transform: translate(20%, -20%);
+  }
 }
 
 /*main*/
@@ -160,6 +178,21 @@ p {
 }
 
 .project-link {
-  /* text-decoration: none; */
   color: black;
+}
+
+.personal-projects-link:hover > .work-svg-animation {
+  animation-name: work;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes work {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
 }
